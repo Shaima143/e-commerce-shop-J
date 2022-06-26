@@ -21,3 +21,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//add a new shoe
+Route::view('/shoes', 'shoes.add-shoe');
