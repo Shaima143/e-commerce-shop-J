@@ -200,7 +200,7 @@
         </div>
 
       <div class="mb-3">
-         <input type="file" name="img" id="img">
+         <input type="file" name="gallery" id="gallery">
           {{-- <label for="img" class="form-label">Image: </label>
           <input class="form-control" type="file" id="img"> --}}
       </div>

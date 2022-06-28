@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\product;
+use App\Shoe;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/index', 'HomeController@index')->name('home');
+Route::get('/index', 'HomeController@index')->name('index');
 
 //add a new shoe
 Route::view('/addShoes', 'shoes.add-shoe');

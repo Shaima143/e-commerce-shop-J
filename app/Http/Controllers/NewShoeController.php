@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Shoe;
 use Alert;
+use App\product;
 
 class NewShoeController extends Controller
 {
@@ -20,30 +21,30 @@ class NewShoeController extends Controller
         $request -> validate([
             'name' => 'required',
             'price' => 'required',
-            'size' => 'required',
+            //'size' => 'required',
             'description' => 'required',
             'category' => 'required',
-            'img' => 'required|mimes:jpeg,png'
+            'gallery' => 'required|mimes:jpeg,png'
         ]);
 
-        $img = $request -> img;
-        $imageFilename = time(). '.' . $img->extension();
-        $img -> move(public_path('images'),$imageFilename);
+        $gallery = $request -> gallery;
+        $imageFilename = time(). '.' . $gallery->extension();
+        $gallery -> move(public_path('img'),$imageFilename);
 
         $shoeName = $request->name;
         $shoePrice = $request ->price;
-        $shoeSize = $request -> size;
+        //$shoeSize = $request -> size;
         $shoeDesc = $request -> description;
         $shoeCategory = $request -> category;
-        $shoeImage = $request -> img;
+        $shoeImage = $request -> gallery;
 
-        $myShoe = new Shoe;
+        $myShoe = new product;
         $myShoe->name = $shoeName;
         $myShoe->price = $shoePrice;
-        $myShoe->size = $shoeSize;
+        //$myShoe->size = $shoeSize;
         $myShoe->description = $shoeDesc;
         $myShoe->category = $shoeCategory;
-        $myShoe->img = $shoeImage;
+        $myShoe->gallery = $shoeImage;
         $myShoe->save();
 
 

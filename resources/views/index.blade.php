@@ -22,9 +22,12 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
   </head>
   <body>
+
+
    <div class="container-fluid" style="background-color: #000000;">
    	<div class="container">
    		<nav class="navbar navbar-expand-lg ">
+               
   <a class="navbar-brand" href="#">Shoe Hub</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

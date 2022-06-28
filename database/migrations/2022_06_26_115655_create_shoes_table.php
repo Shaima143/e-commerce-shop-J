@@ -13,14 +13,14 @@ class CreateShoesTable extends Migration
      */
     public function up()
     {
-        Schema::create('shoes', function (Blueprint $table) {
+        Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->integer('size');
+            //$table->integer('size');
             $table->string('description');
             $table->string('category');
             $table->integer('price');
-            $table->string('img');
+            $table->string('gallery');
             $table->timestamps();
         });
     }
@@ -32,6 +32,6 @@ class CreateShoesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('shoes');
+        Schema::dropIfExists('products');
     }
 }
