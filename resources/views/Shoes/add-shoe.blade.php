@@ -14,14 +14,14 @@
 
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="home">Shoe Hub</a>
+              <a class="navbar-brand" href="/index">Shoe Hub</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="home">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/index">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/addShoes">Add Shoes</a></a>
@@ -32,10 +32,8 @@
                       Categories
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Men</a></li>
-                      <li><a class="dropdown-item" href="#">Women</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Kids</a></li>
+                        <a class="dropdown-item" href="{{url('/index/men')}}">men</a>
+                        <a class="dropdown-item" href="{{url('/index/women')}}">women</a>
                     </ul>
                   </li>
 
@@ -208,6 +206,8 @@
       </div>
 
       <button type="submit" class="btn btn-primary">Add</button>
+
+      @include('sweetalert::alert', ['cdn' => "https://cdn.jsdelivr.net/npm/sweetalert2@9"])
 
   </form>
  </div>

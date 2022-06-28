@@ -12,7 +12,7 @@
     <link  rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
 
     <title>Hello, world!</title>
     <link rel="stylesheet" href="{{asset('css/counter.css')}}">
@@ -25,7 +25,7 @@
    <div class="container-fluid" style="background-color: #000000;">
    	<div class="container">
    		<nav class="navbar navbar-expand-lg ">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">Shoe Hub</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -40,15 +40,15 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          category
+          Category
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{url('/index/men')}}">men</a>
-          <a class="dropdown-item" href="{{url('/index/women')}}">women</a>
-          
+          <a class="dropdown-item" href="{{url('/index/men')}}">Men</a>
+          <a class="dropdown-item" href="{{url('/index/women')}}">Women</a>
+
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <a class="nav-link" href="/addShoes" tabindex="-1" aria-disabled="true">Add Shoes</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -64,28 +64,28 @@
 </nav>
    	</div>
    </div>
-   
-   
-   
-   
-   
-   
+
+
+
+
+
+
    <!--slider start -->
-   
+
    <div class="bd-example">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      
+
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="img/shop 1.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-         <p class="slider-title">NEW  COLLCRTION ARRIVED</p>
-         <p class="slider-text">heck the latest collection on Women's Dress</p>
-         <p class="buttob mt-5"> <a class="btn btn-lg btn-success">BUY NOW</a>&nbsp; &nbsp; <a class="btn btn-danger btn-lg">KNOW MORE</a></p> 
+         <p class="slider-title">NEW  COLLECTION ARRIVED</p>
+         <p class="slider-text">Check the latest collection on Women's Shoes</p>
+         <p class="buttob mt-5"> <a class="btn btn-lg btn-success">BUY NOW</a>&nbsp; &nbsp; <a class="btn btn-danger btn-lg">KNOW MORE</a></p>
         </div>
       </div>
       <div class="carousel-item">
@@ -93,10 +93,10 @@
         <div class="carousel-caption d-none d-md-block">
           <p class="slider-title">EMI Available In <i class="fa fa-credit-card-alt" aria-hidden="true"></i></p>
          <p class="slider-text">50% off in some popular brand product.</p>
-         <p class="buttob mt-5"> <a class="btn btn-lg btn-success">BUY NOW</a>&nbsp; &nbsp; <a class="btn btn-danger btn-lg">KNOW MORE</a></p> 
+         <p class="buttob mt-5"> <a class="btn btn-lg btn-success">BUY NOW</a>&nbsp; &nbsp; <a class="btn btn-danger btn-lg">KNOW MORE</a></p>
         </div>
       </div>
-      
+
     </div>
     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -108,11 +108,11 @@
     </a>
   </div>
 </div>
-   
+
    <!--slider end-->
 
 <div class="container mt-5">
-	
+
  	<div class="row">
 		<div class="col-md-6">
 			<div class="outer-div">
@@ -121,7 +121,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="col-md-6">
 			<div class="outer-div">
 				<div class="inner-div2">
@@ -129,32 +129,32 @@
 				</div>
 			</div>
 		</div>
-	
+
 	</div>
-	
+
 
 </div>
-   
-   
+
+
  <!--counter start-->
   <div class="container counter">
   	<div class="row justify-content-center mt-5 mb-2" style="padding-top: 150px">
   		<h1 class="text-capitalize"><strong>Mega sale Will be start Soon </strong></h1>
   	</div>
-  	
+
   	<div class="row justify-content-center rounded-pill mt-5" style="padding-bottom: 100px; font-size: 70px" id="countdown">
-  		
+
   	</div>
-  	
-  	
+
+
   	<div class="row mt-1 pb-5">
   		<div class="col-md-12 text-center"><a class="btn btn-danger text-light btn-lg">REGISTER NOW</a></div>
   	</div>
   </div>
- <!--counter end-->     
-   
-   
-   
+ <!--counter end-->
+
+
+
    <div class="container">
    	<div class="row mt-5 mb-5">
    		<div class="col-md-12">
@@ -162,8 +162,8 @@
    		</div>
    	</div>
    </div>
-   
-   
+
+
    <div class="container">
    	<div class="owl-carousel">
    		<div>
@@ -178,7 +178,7 @@
    				</div>
    			</div>
    		</div>
-   		
+
    		<div>
    			<div class="card product-card">
    				<img class="card-img-top img-fluid" src="img/product/c111.jpg">
@@ -191,7 +191,7 @@
    				</div>
    			</div>
    		</div>
-   		
+
    		<div>
    			<div class="card product-card">
    				<img class="card-img-top img-fluid" src="img/product/c121.jpg">
@@ -204,8 +204,8 @@
    				</div>
    			</div>
    		</div>
-   		
-   		
+
+
    		<div>
    			<div class="card product-card">
    				<img class="card-img-top img-fluid" src="img/product/c131.jpg">
@@ -218,8 +218,8 @@
    				</div>
    			</div>
    		</div>
-   		
-   		
+
+
    		<div>
    			<div class="card product-card">
    				<img class="card-img-top img-fluid" src="img/product/c141.jpg">
@@ -232,8 +232,8 @@
    				</div>
    			</div>
    		</div>
-   		
-   		
+
+
    		<div>
    			<div class="card product-card">
    				<img class="card-img-top img-fluid" src="img/product/c151.jpg">
@@ -246,7 +246,7 @@
    				</div>
    			</div>
    		</div>
-   		
+
    		<div>
    			<div class="card product-card">
    				<img class="card-img-top img-fluid" src="img/product/c161.jpg">
@@ -259,7 +259,7 @@
    				</div>
    			</div>
    		</div>
-   		
+
    		<div>
    			<div class="card product-card">
    				<img class="card-img-top img-fluid" src="img/product/c31.jpg">
@@ -274,10 +274,10 @@
    		</div>
    	</div>
    </div>
-   
-   
-   
-   
+
+
+
+
    <div class="container">
    	<div class="row mt-5 mb-5">
    		<div class="col-md-12">
@@ -285,8 +285,8 @@
    		</div>
    	</div>
    </div>
-   
-   
+
+
    <div class="container">
    	<div class="owl-carousel">
    		<div>
@@ -301,7 +301,7 @@
    				</div>
    			</div>
    		</div>
-   		
+
    		<div>
    			<div class="card product-card">
    				<img class="card-img-top img-fluid" src="img/product/M2.jpg">
@@ -314,7 +314,7 @@
    				</div>
    			</div>
    		</div>
-   		
+
    		<div>
    			<div class="card product-card">
    				<img class="card-img-top img-fluid" src="img/product/M3.jpg">
@@ -327,8 +327,8 @@
    				</div>
    			</div>
    		</div>
-   		
-   		
+
+
    		<div>
    			<div class="card product-card">
    				<img class="card-img-top img-fluid" src="img/product/M4.jpg">
@@ -341,8 +341,8 @@
    				</div>
    			</div>
    		</div>
-   		
-   		
+
+
    		<div>
    			<div class="card product-card">
    				<img class="card-img-top img-fluid" src="img/product/M5.jpg">
@@ -355,8 +355,8 @@
    				</div>
    			</div>
    		</div>
-   		
-   		
+
+
    		<div>
    			<div class="card product-card">
    				<img class="card-img-top img-fluid" src="img/product/M6.jpg">
@@ -369,7 +369,7 @@
    				</div>
    			</div>
    		</div>
-   		
+
    		<div>
    			<div class="card product-card">
    				<img class="card-img-top img-fluid" src="img/product/M7.jpg">
@@ -382,14 +382,14 @@
    				</div>
    			</div>
    		</div>
-   		
-   		
+
+
    	</div>
    </div>
-   
-   
-   
-   
+
+
+
+
    <div class="container-fluid" id="discount">
    	<div class="container discount-session-content">
    		<div class="row">
@@ -399,32 +399,32 @@
    				</h1><br/>
    				<div class="social-icons">
    					<i class="fa fa-facebook" aria-hidden="true"></i>
-   					<i class="fa fa-twitter" aria-hidden="true"></i> 
+   					<i class="fa fa-twitter" aria-hidden="true"></i>
    					<i class="fa fa-instagram" aria-hidden="true"></i>
    				</div>
    			</div>
-   			
+
    			<div class="col-md-6">
    				<h1>Subscribe to get discount<br/> coupons & new Offers!</h1>
    				<p class="discount-session-content-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt erat volutpat.</p><br/>
    				<form class="form-inline">
    					<div  class="form-group mx-sm-12 mb-2">
-   						<label for="inputPassword2" class="sr-only">Mail Id</label> 
+   						<label for="inputPassword2" class="sr-only">Mail Id</label>
    						<input type="password" class="form-control" id="inputPassword2" placeholder="Enter Your Mail Id">
    						&nbsp; &nbsp;
-   						
+
    					</div>
    					<button type="submit" class="btn btn-danger text-light mb-2">SUBSCRIBE US</button>
    				</form>
    			</div>
-   			
+
    		</div>
    	</div>
    </div>
-   
-   
-   
-   
+
+
+
+
    <div class="container mt-5 mb-5">
    	<div class="row">
    		<div class="col-md-12 text-center text-capitalize">
@@ -432,7 +432,7 @@
    		</div>
    	</div>
    </div>
-   
+
    <div class="container mt-5 mb-5">
    	<div class="owl-carousel owl-theme">
    		<div class="item"><img src="img/1.png" class="img-fluid"></div>
@@ -442,10 +442,10 @@
    		<div class="item"><img src="img/5.png" class="img-fluid"></div>
    	</div>
    </div>
-   
-   
-   
-   
+
+
+
+
  <div class="container mt-5 mb-5">
  	<div class="row">
  		<div class="col-md-6 payment-method">
@@ -454,7 +454,7 @@
  			<p class="payment-methode-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, eius, totam. Corrupti, laborum dolorem corporis accusamus commodi cum voluptates, beatae sunt ab, mollitia perferendis rerum deleniti placeat porro consectetur cupiditate?</p><br/>
  			<img class="img-fluid" src="img/payment_methods.jpg">
  		</div>
- 		
+
  		<div class="col-md-6 payment-method">
  			<p class=" icon pt-5 pb-2"><i class="fa fa-plane" aria-hidden="true"></i></p>
  			<h2 class="text-capitalize">Shipment and delivery</h2>
@@ -463,9 +463,9 @@
  			<p><i class="fa fa-arrow-right" aria-hidden="true"></i>  2 days <strong>free delivery</strong> only for <strong> prime members.</strong></p>
  		</div>
  	</div>
- </div>  
-   
-   
+ </div>
+
+
    <footer class="container-fluid mt-5">
    	<div class="container pt-5 pb-5">
    		<div class="row">
@@ -474,8 +474,8 @@
    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia et eligendi at illo? Repellendus explicabo earum ab repudiandae fugit et eaque iusto cumque labore! At, accusamus explicabo reprehenderit natus cumque!</p>
    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem consequatur vero reiciendis pariatur, qui, assumenda nobis vitae quia natus quod, iste quae. Corrupti, eum, adipisci mollitia voluptatum est consequatur hic?</p>
    			</div>
-   			
-   			
+
+
    			<div class="col-md-3">
    			<h3>Latest products</h3>
    				<div class="media mt-5"> <img class="mr-3 img-fluid" src="img/footer images/c31.jpg" alt="">
@@ -483,20 +483,20 @@
    					<h5>Woman's Dress</h5>
    					<del>$80</del> &nbsp; $70
    				</div>
-   					
+
    				</div>
-   				
+
    				<div class="media mt-5"> <img class="mr-3 img-fluid" src="img/footer images/c51.jpg" alt="">
    				<div class="media-body">
    					<h5>Woman's Top</h5>
    					<del>$80</del> &nbsp; $70
    				</div>
-   					
+
    				</div>
    			</div>
-   			
-   			
-   			
+
+
+
    			<div class="col-md-3">
    			<h3>Top Rated products</h3>
    				<div class="media mt-5"> <img class="mr-3 img-fluid" src="img/footer images/M2.jpg" alt="">
@@ -504,24 +504,24 @@
    					<h5>Man's Dress</h5>
    					<del>$80</del> &nbsp; $70
    				</div>
-   					
+
    				</div>
-   				
+
    				<div class="media mt-5"> <img class="mr-3 img-fluid" src="img/footer images/M7.jpg" alt="">
    				<div class="media-body">
    					<h5>hand bresslare</h5>
    					<del>$80</del> &nbsp; $70
    				</div>
-   					
+
    				</div>
    			</div>
-   			
+
    		</div>
    	</div>
-   </footer> 
-   
-   
-   
+   </footer>
+
+
+
    <div class="container-fluid bg-dark">
    	<div class="row">
    		<div class="col-md-12 text-capitalize text-center text-light" >
@@ -529,34 +529,34 @@
    		</div>
    	</div>
    </div>
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -565,7 +565,7 @@
     <script src="js/counter.js"></script>
     <script src="js/owl.carousel.min.js"></script>
    <script>
-	  
+
 	$('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -585,7 +585,7 @@
             loop:false
         }
     }
-})  
+})
    </script>
   </body>
 </html>

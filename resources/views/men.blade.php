@@ -12,7 +12,7 @@
     <link  rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
 
     <title>Hello, world!</title>
     <link rel="stylesheet" href="{{asset('css/counter.css')}}">
@@ -31,7 +31,7 @@
    <div class="container-fluid" style="background-color: #000000;">
    	<div class="container">
    		<nav class="navbar navbar-expand-lg ">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">Shoe Hub</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -39,24 +39,22 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+          Category
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="{{url('/index/men')}}">men</a>
+          <a class="dropdown-item" href="{{url('/index/women')}}">women</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <a class="nav-link" href="/addShoes" tabindex="-1" aria-disabled="true">Add Shoes</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -72,14 +70,14 @@
 </nav>
    	</div>
    </div>
-   
-   
 
-   
+
+
+
 @foreach($data as $key => $data)
 <div class="d-flex justify-content-center container mt-5">
         <div class="card p-3 bg-white"><i ></i>
-            <div class="about-product text-center mt-2"><img src="{{ asset($data->gallery) }}" width="300">
+            <div class="about-product text-center mt-2"><img src="{{ asset($data->images) }}" width="300">
                 <div>
                     <a href="products/{{$data->id}}"><h4>{{$data->name}}</h4></a>
                     <h6 class="mt-0 text-black-50">{{$data->description}}</h6>
@@ -89,33 +87,33 @@
         </div>
     </div>
     @endforeach
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -124,7 +122,7 @@
     <script src="js/counter.js"></script>
     <script src="js/owl.carousel.min.js"></script>
    <script>
-	  
+
 	$('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -144,7 +142,7 @@
             loop:false
         }
     }
-})  
+})
    </script>
   </body>
 </html>

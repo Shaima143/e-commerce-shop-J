@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Shoe;
+use Alert;
 
 class NewShoeController extends Controller
 {
@@ -47,7 +48,10 @@ class NewShoeController extends Controller
 
 
         //return "Shoe added successfully";
-        return view('home');
+        Alert::success('New Shoe Added Successfully', 'Stock updated');
+        return back();
+        //return view('index');
+
 
         // $data['name'] = $request->name;
         // $data['size'] = $request->size;
