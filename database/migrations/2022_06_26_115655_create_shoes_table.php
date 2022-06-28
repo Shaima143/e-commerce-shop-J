@@ -19,7 +19,7 @@ class CreateShoesTable extends Migration
             $table->integer('size');
             $table->string('description');
             $table->string('category');
-            $table->float('price');
+            $table->integer('price');
             $table->string('img');
             $table->timestamps();
         });

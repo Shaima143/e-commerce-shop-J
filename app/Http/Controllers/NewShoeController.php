@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Shoe;
 
 class NewShoeController extends Controller
 {
@@ -24,9 +25,9 @@ class NewShoeController extends Controller
             'img' => 'required|mimes:jpeg,png'
         ]);
 
-        $image = $request -> img;
-        $imageFilename = time(). '.' . $image->extension();
-        $image -> move(public_path('images'),$imageFilename);
+        $img = $request -> img;
+        $imageFilename = time(). '.' . $img->extension();
+        $img -> move(public_path('images'),$imageFilename);
 
         $shoeName = $request->name;
         $shoePrice = $request ->price;
@@ -45,8 +46,8 @@ class NewShoeController extends Controller
         $myShoe->save();
 
 
-        return "Shoe added successfully";
-        //return view('home');
+        //return "Shoe added successfully";
+        return view('home');
 
         // $data['name'] = $request->name;
         // $data['size'] = $request->size;

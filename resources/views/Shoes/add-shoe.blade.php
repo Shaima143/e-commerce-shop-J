@@ -26,6 +26,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href="/addShoes">Add Shoes</a></a>
                   </li>
+
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Categories
@@ -37,6 +38,7 @@
                       <li><a class="dropdown-item" href="#">Kids</a></li>
                     </ul>
                   </li>
+
 
                 </ul>
                 <div class="col-md-6">
@@ -79,7 +81,7 @@
           <label for="name" class="form-label">Name</label>
           <input type="text " class="form-control" id="name" aria-describedby="emailHelp" name="name">
         </div>
-        Size
+        {{-- Size
 
         <div class="row">
             <div class="col">
@@ -153,14 +155,32 @@
                     </label>
                   </div>
             </div>
-        </div>
+        </div> --}}
+
+        <div class="mb-3">
+            <label for="size" class="form-label">Size</label>
+            <input type="text" class="form-control" id="size" aria-describedby="emailHelp" name="size">
+          </div>
+
 
         <div class="mb-3">
           <label for="description" class="form-label">Description</label>
           <input type="text" class="form-control" id="description" aria-describedby="emailHelp" name="description">
         </div>
 
+
         <div class="mb-3">
+            <label for="category" class="form-label">Category</label>
+            <input type="text" class="form-control" id="category" aria-describedby="emailHelp" name="category">
+          </div>
+
+          {{-- <select name="category class="form-control>
+            <option value="1">Men</option>
+            <option value="2">Women</option>
+            <option value="3">Kids</option>
+            </select> --}}
+
+        {{-- <div class="mb-3">
           <label for="category" class="form-label">Category</label>
           <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="category" data-bs-toggle="dropdown" aria-expanded="false">
@@ -171,10 +191,10 @@
               <li><a class="dropdown-item" href="#" name="category">Women</a></li>
               <li><a class="dropdown-item" href="#" name="category">Kids</a></li>
             </ul>
-          </div>
+          </div> --}}
 
           {{-- <input type="number" class="form-control" id="category" aria-describedby="emailHelp" name="category"> --}}
-        </div>
+        {{-- </div> --}}
 
         <div class="mb-3">
           <label for="price" class="form-label">Price</label>
@@ -182,9 +202,9 @@
         </div>
 
       <div class="mb-3">
-        {{-- <input type="file" name="img" id="img"> --}}
-          <label for="img" class="form-label">Image: </label>
-          <input class="form-control" type="file" id="img">
+         <input type="file" name="img" id="img">
+          {{-- <label for="img" class="form-label">Image: </label>
+          <input class="form-control" type="file" id="img"> --}}
       </div>
 
       <button type="submit" class="btn btn-primary">Add</button>
