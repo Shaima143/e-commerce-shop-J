@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/style.css">
 
 
-    <title>Hello, world!</title>
+    <title>Shoe Hub</title>
     <link rel="stylesheet" href="{{asset('css/counter.css')}}">
     <link rel="stylesheet" href="{{asset('css/owl.carousel.css')}}">
     <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
@@ -23,11 +23,14 @@
   </head>
   <body>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
 
    <div class="container-fluid" style="background-color: #000000;">
    	<div class="container">
    		<nav class="navbar navbar-expand-lg ">
-               
+
   <a class="navbar-brand" href="#">Shoe Hub</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -63,14 +66,12 @@
     		<a class="btn btn-lg btn-danger text-light ml-5"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Add To Cart</a>
     	</li>
     </ul>
+
+
   </div>
 </nav>
    	</div>
    </div>
-
-
-
-
 
 
    <!--slider start -->
@@ -431,7 +432,7 @@
    <div class="container mt-5 mb-5">
    	<div class="row">
    		<div class="col-md-12 text-center text-capitalize">
-   			<h1>our brand partners</h1>
+   			<h1>Our brand partners</h1>
    		</div>
    	</div>
    </div>
@@ -483,7 +484,7 @@
    			<h3>Latest products</h3>
    				<div class="media mt-5"> <img class="mr-3 img-fluid" src="img/footer images/c31.jpg" alt="">
    				<div class="media-body">
-   					<h5>Woman's Dress</h5>
+   					<h5>Woman's sandals</h5>
    					<del>$80</del> &nbsp; $70
    				</div>
 
@@ -491,7 +492,7 @@
 
    				<div class="media mt-5"> <img class="mr-3 img-fluid" src="img/footer images/c51.jpg" alt="">
    				<div class="media-body">
-   					<h5>Woman's Top</h5>
+   					<h5>Woman's Shoes</h5>
    					<del>$80</del> &nbsp; $70
    				</div>
 
@@ -504,7 +505,7 @@
    			<h3>Top Rated products</h3>
    				<div class="media mt-5"> <img class="mr-3 img-fluid" src="img/footer images/M2.jpg" alt="">
    				<div class="media-body">
-   					<h5>Man's Dress</h5>
+   					<h5>Men's Running shoes</h5>
    					<del>$80</del> &nbsp; $70
    				</div>
 
@@ -512,7 +513,7 @@
 
    				<div class="media mt-5"> <img class="mr-3 img-fluid" src="img/footer images/M7.jpg" alt="">
    				<div class="media-body">
-   					<h5>hand bresslare</h5>
+   					<h5>Men' Sneakers</h5>
    					<del>$80</del> &nbsp; $70
    				</div>
 

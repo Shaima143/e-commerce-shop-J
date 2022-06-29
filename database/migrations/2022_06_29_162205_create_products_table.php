@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateShoesTable extends Migration
+class CreateProductsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -16,11 +16,9 @@ class CreateShoesTable extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            //$table->integer('size');
-            $table->string('description');
-            $table->string('category');
-            $table->integer('price');
-            $table->string('gallery');
+            $table->decimal('price');
+            $table->UnsignedInteger('category_id');
+            $table->string('image_path');
             $table->timestamps();
         });
     }

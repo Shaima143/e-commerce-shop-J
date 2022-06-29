@@ -77,7 +77,8 @@
             {{-- <div class="about-product text-center mt-2"><img src="{{ asset($data->img) }}" width="300"> --}}
                 {{-- <div class="about-product text-center mt-2" src="{{ asset('img') }}/{{ $data->gallery}}" width="300"> --}}
                     <div class="about-product text-center mt-2" width="300">
-                        <img src="{{ asset('img') }}/{{ $data->gallery}}" width="300">
+
+                        <img src="{{asset('img') }}/{{ $data->gallery }}" width="300"/>
                 <div>
                     <a href="products/{{$data->id}}"><h4>{{$data->name}}</h4></a>
                     <h6 class="mt-0 text-black-50">{{$data->description}}</h6>

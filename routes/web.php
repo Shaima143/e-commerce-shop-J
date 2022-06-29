@@ -65,3 +65,13 @@ Route::get('/index/men', function () {
     return view('men', ['data' => $data]);
 });
 
+Route::prefix('products')->group(function (){
+    Route::get('/', 'ProductsController@index');
+    Route::get('create', 'ProductsController@create');
+    Route::get('edit/{id}', 'ProductsController@edit');
+    Route::get('delete/{id}', 'ProductsController@destroy');
+    Route::post('update/{id}', 'ProductsController@update');
+    Route::post('store', 'ProductsController@store');
+
+});
+
