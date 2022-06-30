@@ -44,7 +44,7 @@ class ProductsController extends Controller
             'name' => 'required',
             'price' => 'required',
             'category_id' => 'required',
-            'image_path' => 'required|mimes:jpeg,png'
+            //'image_path' => 'required|mimes:jpeg,png,jpg'
         ]);
 
 
@@ -85,8 +85,8 @@ class ProductsController extends Controller
      */
     public function edit($id)
     {
-        $data['products'] = Product::findOrFail($id);
-        return view('products.edit');
+        $data['product'] = Product::findOrFail($id);
+        return view('products.edit', $data);
     }
 
     /**
@@ -98,7 +98,33 @@ class ProductsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        //return $request;
+
+                //validate fields
+                $request -> validate([
+                    'name' => 'required',
+                    'price' => 'required',
+                    'category_id' => 'required',
+                    //'image_path' => 'required|mimes:jpeg,png,jpg'
+                ]);
+
+
+                $record = Product::findOrFail($id);
+                $record -> name = $request->name;
+                $record -> price = $request->price;
+                $record -> category_id = $request->category_id;
+
+                //upload image
+                if($request->hasFile('image')){
+                    $photo = $request->file('image');
+                    $path = 'uploads/products/' .time().'.'.$photo->extension();
+                    $photo->move(public_path('uploads/products/'), $path);
+                    $record->image_path = $path;
+                }
+
+                $record->save();
+                Alert::success('Product Updated Successfully', 'Details updated');
+                return back();
     }
 
     /**

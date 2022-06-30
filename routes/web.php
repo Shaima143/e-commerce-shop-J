@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-use App\product;
+use App\Product;
 use App\Shoe;
 
 /*
